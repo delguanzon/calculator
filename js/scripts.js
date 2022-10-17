@@ -1,6 +1,6 @@
 function saySomething(whatToSay) {  
-  window.alert(whatToSay);
- // document.getElementById("result").innerHTML = whatToSay;
+  //window.alert(whatToSay);
+  document.getElementById("result").innerHTML = whatToSay;
 }
 
 //business logic
@@ -31,6 +31,8 @@ const outputTextSubtract = number1.toString() + "-" + number2.toString() + "=" +
 const outputTextDivide = number1.toString() + "/" + number2.toString() + "="  + divide(number1, number2);
 const outputTextMultiply = number1.toString() + "*" + number2.toString() + "="  + multiply(number1, number2);
 const outputTextAdd = number1.toString() + "+" + number2.toString() + "="  + add(number1, number2);
+const allResults = outputTextAdd + "<br>" + outputTextDivide + "<br>" + outputTextMultiply + "<br>" + outputTextSubtract;
+saySomething(allResults);
 
 window.alert(outputTextAdd + "." + "\n" + outputTextSubtract + "." + "\n" + outputTextMultiply + "." + "\n" + outputTextDivide +".");
 /*window.alert(outputTextDivide);
